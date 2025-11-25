@@ -4,23 +4,24 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tisa-finance"
-version = "0.2.0"
+version = "0.2.1"
 description = "Transform-Invariant Segment Alignment (TISA) for financial time series"
 authors = [{name = "TISA Team"}]
 readme = "README.md"
-license = "MIT"
+license = {file = "LICENSE"}
 requires-python = ">=3.9"
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Financial and Insurance Industry",
     "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Topic :: Scientific/Engineering :: Mathematics",
 ]
-urls = {Repository = "https://github.com/TheGameStopsNow/tisa-finance", "Bug Tracker" = "https://github.com/TheGameStopsNow/tisa-finance/issues"}
+urls = {Repository = "https://github.com/YOUR_USERNAME/TISA", "Bug Tracker" = "https://github.com/YOUR_USERNAME/TISA/issues"}
 dependencies = [
     "numpy>=1.23",
     "scipy>=1.10",
@@ -45,7 +46,3 @@ dev = [
 
 [project.scripts]
 tisa = "tisa.cli:main"
-
-[tool.setuptools.packages.find]
-include = ["tisa*"]
-exclude = ["data*", "examples*", "tests*"]

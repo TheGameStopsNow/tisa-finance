@@ -198,7 +198,7 @@ class TISADistance:
             # Early exit: if we found a nearly perfect match, don't test remaining transforms
             # Only exit if cost is extremely low (near-zero alignment error)
             # This is very conservative to avoid missing the true best transform
-            if best_cost < len(seg_x) * 0.01:  # Very strict threshold (was 0.5, too loose)
+            if best_cost < len(seg_x) * 0.001:  # Extremely strict threshold (was 0.01)
                 # Skip remaining transforms
                 remaining = [t for t in transform_order if t not in transform_details and t not in skipped_transforms]
                 if remaining:
