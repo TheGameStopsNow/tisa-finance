@@ -1,0 +1,17 @@
+.hypothesis/
+.pytest_cache/
+reports/
+data/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.env
+.DS_Store
+.ipynb_checkpoints/

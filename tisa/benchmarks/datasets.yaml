@@ -1,0 +1,5 @@
+window: 20
+stride: 10
+datasets:
+  - ticker: SAMPLE
+    file: tisa/tests/data/sample_series.csv

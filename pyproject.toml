@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tisa-finance"
+version = "0.2.0"
+description = "Transform-Invariant Segment Alignment (TISA) for financial time series"
+authors = [{name = "TISA Team"}]
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+urls = {Repository = "https://github.com/TheGameStopsNow/tisa-finance", "Bug Tracker" = "https://github.com/TheGameStopsNow/tisa-finance/issues"}
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.10",
+    "pandas>=1.5",
+    "numba>=0.57",
+    "matplotlib>=3.7",
+    "yfinance>=0.2",
+    "pyyaml>=6.0",
+    "tqdm>=4.64",
+    "dtaidistance>=2.3.12",
+    "tslearn>=0.6.2",
+    "scikit-learn>=1.1",
+    "hypothesis>=6.82"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.3",
+    "pytest-cov>=4.0",
+    "pytest-benchmark>=4.0"
+]
+
+[project.scripts]
+tisa = "tisa.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["tisa*"]
+exclude = ["data*", "examples*", "tests*"]

@@ -1,0 +1,9 @@
+window: 1000
+stride: 10000
+datasets:
+  - ticker: SPY_1m
+    file: data/SPY_1m.csv
+  - ticker: QQQ_1m
+    file: data/QQQ_1m.csv
+  - ticker: IWM_1m
+    file: data/IWM_1m.csv

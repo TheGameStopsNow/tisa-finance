@@ -1,0 +1,10 @@
+window: 252
+stride: 63
+datasets:
+  - ticker: SPY
+    file: data/SPY_1d.csv
+  - ticker: QQQ
+    file: data/QQQ_1d.csv
+  - ticker: IWM
+    file: data/IWM_1d.csv
+
