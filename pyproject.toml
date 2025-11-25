@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tisa-finance"
-version = "0.2.1"
+version = "0.2.2"
 description = "Transform-Invariant Segment Alignment (TISA) for financial time series"
 authors = [{name = "TISA Team"}]
 readme = "README.md"
